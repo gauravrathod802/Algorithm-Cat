@@ -16,3 +16,16 @@
     border-radius: 10px;
     box-shadow: 20px 20px 60px #00000041;
 }
+
+input[type="text"],input[type="password"]{
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+.loginBtn{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+
+}
