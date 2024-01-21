@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -16,16 +17,73 @@
     border-radius: 10px;
     box-shadow: 20px 20px 60px #00000041;
 }
+h1{
+    color: orangered;
 
+}
 input[type="text"],input[type="password"]{
     border-radius: 15px;
     border: none;
-    padding: 5px;
+    padding: 7px;
+    padding-left: 30px;
+
 }
 .loginBtn{
     width: 100%;
     border-radius: 15px;
     border: none;
     padding: 5px;
+    background-color: orangered;
 
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left:8px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666; /* Adjust the color as needed */
+}
+
+.eyeIcon{
+    position: absolute;
+    right: 14px;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+
+}
+
+.title::before{
+    content: "";
+    width: 95px;
+    height: 0.5px;
+    display: block;
+    background: rgb(129, 125, 125);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.title::after{
+    content: "";
+    width: 95px;
+    height: 0.5px;
+    display: block;
+    background: rgb(129, 125, 125);
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
