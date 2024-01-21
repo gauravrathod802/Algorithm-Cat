@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Login.css';
-import { FaUser, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaUser, FaLock, FaEye, FaEyeSlash,FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FcGoogle } from "react-icons/fc";
+import{BsTwitterX} from 'react-icons/bs';
 
 const Login = () => {
     const [passwordType, setPasswordType] = useState('password'); 
@@ -33,10 +35,21 @@ const Login = () => {
                         <input type={passwordType} name='password' id="password" placeholder='Enter Password'/>
                     </div><br /><br />
                     <input type="submit" value="Login" className='loginBtn' /><br /><br />
-                    <p>Don't have an account? <a href="#register">Register</a></p><br />
-                    <h6 className='title'>or</h6>
-
+                    <p>Don't have an account? <a href="#register">Sign up</a></p><br />
+                    <h4 className='title'>or</h4><br />
+                    <p style={{textAlign: 'center'}}>Sign up using</p><br />
+                    <div className="social">
+                    <a href="#google" className='google'><FcGoogle /></a>
+                    <a href="#twitter" className='twitter'><BsTwitterX /></a>
+                    <a href="#facebook" className='facebook'><FaFacebook /></a>
+                    <a href="#linkedin" className='linkedin'><FaLinkedin /></a>
+                    </div>
                 </form>
+                <div className="image">
+                    <h1>Welcome  back</h1>
+                    <hr />
+                    <p>Login to continue to your account.</p>
+                </div>
             </div>
         </div>
     )
